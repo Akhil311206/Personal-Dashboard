@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div id="clock"></div>
+    <div id="greeting">Good Morning</div>
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <!-- Main Dashboard -->
+  <main class="dashboard">
+    <!-- Left Column -->
+    <section class="todo-section card">
+      <h2>Todo List</h2>
+      <div class="todo-input">
+        <input type="text" id="todo-input" placeholder="Add a task..." autocomplete="off"  required />
+        <button id="add-todo">+</button>
+      </div>
+      <ul id="todo-list"></ul>
+    </section>
+
+    <!-- Right Column -->
+    <section class="widgets">
+      <!-- Weather -->
+      <div class="weather card">
+        <h2>Weather</h2>
+        <div id="weather-info">Loading...</div>
+        <div id="temperature"></div>
+        <img id="weatherImage" src="" alt="">
+      </div>
+
+      <!-- News -->
+      <div class="news card">
+        <h2>News</h2>
+        <ul id="news-list">
+            <li>Requires backend, so skipped for now</li>
+        </ul>
+      </div>
+
+      <!-- Quotes -->
+      <div class="quotes card">
+        <h2>Quote of the Day</h2>
+        <p id="quote">Loading...</p>
+        <button id="new-quote">New Quote</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
