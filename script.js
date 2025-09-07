@@ -99,6 +99,10 @@ setTimeout(quoteGenerator, 1000);
 document.querySelector("#new-quote").addEventListener("click", quoteGenerator);
 
 
+const themeToggle = document.querySelector("#theme-toggle");
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+});
 
 
 
