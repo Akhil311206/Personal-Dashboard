@@ -24,7 +24,7 @@ setInterval(() => {
     }
 
     else if(hours >= 18 && hours < 21) {
-        greet.innerHtml = "Good Evening MASTER!!"
+        greet.innerHTML = "Good Evening MASTER!!"
     }
 
     else if (hours >= 21) {
@@ -107,6 +107,7 @@ const themeToggle = document.querySelector("#theme-toggle");
 themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 });
+
 
 
 
