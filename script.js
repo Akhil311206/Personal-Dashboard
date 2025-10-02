@@ -18,12 +18,16 @@ const quotes = [
 setInterval(() => {
     const date = new Date();
     const hours = date.getHours();
-    if (hours > 11 && hours < 18) {
+    if (hours >= 12 && hours < 18) {
 
         greet.innerHTML = "Good Afternoon MASTER!!"
     }
 
-    else if (hours > 21) {
+    else if(hours >= 18 && hours < 21) {
+        greet.innerHtml = "Good Evening MASTER!!"
+    }
+
+    else if (hours >= 21) {
         greet.innerHTML = "Good Night MASTER!!"
     }
 
@@ -103,6 +107,7 @@ const themeToggle = document.querySelector("#theme-toggle");
 themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 });
+
 
 
 
