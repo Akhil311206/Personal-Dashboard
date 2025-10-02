@@ -36,7 +36,7 @@ setInterval(() => {
     }
     const time = date.toLocaleTimeString();
     timeClock.innerHTML = time;
-}, 1000);
+}, 10);
 
 const todo = document.querySelector("#add-todo")
 const todoInput = document.querySelector("#todo-input")
@@ -107,6 +107,7 @@ const themeToggle = document.querySelector("#theme-toggle");
 themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 });
+
 
 
 
