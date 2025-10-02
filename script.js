@@ -31,7 +31,7 @@ setInterval(() => {
         greet.innerHTML = "Good Night MASTER!!"
     }
 
-    else {
+    else if (hours >= 6 && hours < 12){
         greet.innerHTML = "Good Morning MASTER!!"
     }
     const time = date.toLocaleTimeString();
@@ -107,6 +107,7 @@ const themeToggle = document.querySelector("#theme-toggle");
 themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 });
+
 
 
 
